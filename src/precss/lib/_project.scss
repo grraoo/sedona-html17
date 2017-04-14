@@ -1,0 +1,21 @@
+$mtop: 15px;
+
+$c-gray: #959595;
+$c-gray-2: #dcdcdc;
+$c-gray-3: #6b6b6b;
+$c-light-gray: #e8e8e8;
+$c-dark-gray: #333;
+$c-bright-rusty: #f07e00;
+$c-rusty: #f7a73e;
+$c-white: #fff;
+$c-yellow: #ff0;
+$c-black: #000;
+$c-brown-red: #9a2622;
+
+$bg-hover: rgba(0, 0, 0, .3);
+$bg-rustygradient: linear-gradient(to top, $c-bright-rusty, $c-rusty, $c-bright-rusty);
+$bg-dark-transparent: rgba(0, 0, 0, .8);
+
+$table-border: 3px solid $c-gray-2;
+
+$bg-rusty-gradient-white-cut: linear-gradient(100deg, $c-white 0, $c-white 21px, transparent 22px), linear-gradient(to top, $c-bright-rusty, $c-rusty, $c-bright-rusty);
