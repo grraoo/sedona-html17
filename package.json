@@ -17,5 +17,13 @@
   "description": "html-css-17",
   "keywords": [
     "html17"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grraoo/sedona-html17.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grraoo/sedona-html17/issues"
+  },
+  "homepage": "https://github.com/grraoo/sedona-html17#readme"
 }
