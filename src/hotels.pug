@@ -16,7 +16,7 @@ html
         a.main-menu-item(href='#') Карта штата
         a.main-menu-item Гостиницы
     main
-      form.hotel-choise(action='' method='get')
+      form.hotel-choise(action='index.html' method='get')
         fieldset.structure
           legend Инфраструктура
           label бассейн
@@ -38,8 +38,8 @@ html
           fieldset.payments-inputs
             label от
               input(type=text value='0').payments-input.min
-              label до
-                input(type=text value='3000').payments-input.max
+            label до
+              input(type=text value='3000').payments-input.max
         .range(style='height: 5px; width: 150px; background-image: linear-gradient(to right, red 50px, blue 51px, blue 99px, red 100px)')
           .min-range.range-control
           .max-range.range-control
