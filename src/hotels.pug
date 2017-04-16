@@ -1,0 +1,111 @@
+doctype html
+html
+  head
+    title Sedona
+    meta(charset='utf-8')
+    link(type='text/css'
+    href='css/styles.css'
+    rel='stylesheet')
+  body
+    header
+      .logo
+        a(href='index.html') <
+      nav.main-menu
+        a.main-menu-item(href='#') Информация
+        a.main-menu-item(href='#') Фото и видео
+        a.main-menu-item(href='#') Карта штата
+        a.main-menu-item Гостиницы
+    main
+      form.hotel-choise(action='' method='get')
+        fieldset.structure
+          legend Инфраструктура
+          label бассейн
+            input(type='checkbox')
+          label парковка
+            input(type='checkbox')
+          label Wi-fi
+            input(type='checkbox')
+        fieldset.room-type
+          legend Тип жилья
+          label Гостиница
+            input(type='checkbox')
+          label Мотель
+            input(type='checkbox')
+          label Апартаменты
+            input(type='checkbox')
+        fieldset.payments
+          legend Стоимость в сутки (р)
+          fieldset.payments-inputs
+            label от
+              input(type=text value='0').payments-input.min
+              label до
+                input(type=text value='3000').payments-input.max
+        .range(style='height: 5px; width: 150px; background-image: linear-gradient(to right, red 50px, blue 51px, blue 99px, red 100px)')
+          .min-range.range-control
+          .max-range.range-control
+        a(href='') показать
+      .hotels-found
+        header.result-header
+          .found Найдено: 3
+          .sort
+            span Сортировка:
+            a.sort-link(href='') По цене
+            a.sort-link(href='') По типу
+            a.sort-link(href='') По рейтингу
+          .sort-direction
+            a.sort-direction-link(href='') /\
+            a.sort-direction-link(href='') \/
+        .result-content
+          article.result-item
+            .image
+              img(src='http://placehold.it/137x90' alt='hotel-img')
+            .hotel-description
+              h2.hotel-name Amara Resort & Spa
+              .type-price
+                .type Гостиница
+                .price от 4000 р.
+              .actions
+                a(href='') Подробнее
+                a(href='') Забронировать
+            .rating
+              .stars
+              .rate Рейтинг: 8,5
+          article.result-item
+            .image
+              img(src='http://placehold.it/137x90' alt='hotel-img')
+            .hotel-description
+              h2.hotel-name Desert Quail Inn
+              .type-price
+                .type Мотель
+                .price от 3000 р.
+              .actions
+                a(href='') Подробнее
+                a(href='') Забронировать
+            .rating
+              .stars
+              .rate Рейтинг: 8,9
+          article.result-item
+            .image
+              img(src='http://placehold.it/137x90' alt='hotel-img')
+            .hotel-description
+              h2.hotel-name Villas at Poco Diablo
+              .type-price
+                .type Апартаменты
+                .price от 2000 р.
+              .actions
+                a(href='') Подробнее
+                a(href='') Забронировать
+            .rating
+              .stars
+              .rate Рейтинг: 9,2
+    footer.main-footer
+      .hashtag #VisitSedona
+      .social
+        .social-tw
+          a.social-link(href='https://twitter.com') tw
+        .social-fb
+          a.social-link(href='https://facebook.com') fb
+        .social-yt
+          a.social-link(href='https://youtube.com') yt
+      .copyright
+        a.html-logo(href='https://htmlacademy.ru/intensive/htmlcss') Website by

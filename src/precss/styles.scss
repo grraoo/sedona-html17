@@ -2,6 +2,7 @@
 
 main {
   counter-reset: list;
+
 }
 
 .numbering {
@@ -13,4 +14,27 @@ main {
     font-size: 1rem;
     font-weight: 400;
   }
+}
+
+.range {
+  position: relative;
+}
+
+.range-control {
+  background: $c-gray;
+  border: 10px solid $c-bright-rusty;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  position: absolute;
+  top: -12.5px;
+  width: 10px;
+}
+
+.min-range {
+  left: 30px;
+}
+
+.max-range {
+  left: 80px;
 }
