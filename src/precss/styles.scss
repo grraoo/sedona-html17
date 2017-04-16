@@ -1,15 +1,16 @@
-html,
-body {
-  font-size: 16px;
-}
+@import 'lib/project', 'lib/mixins';
 
 main {
   counter-reset: list;
 }
-.numbering:after {
-  counter-increment: list 1;
-  content: "- №" counter(list) " -" ;
-  display: block;
-  font-size: 1rem;
-  font-weight: 400;
+
+.numbering {
+  &::after {
+    color: $c-gray;
+    content: '- №' counter(list) ' -';
+    counter-increment: list 1;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
