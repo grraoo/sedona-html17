@@ -72,8 +72,29 @@ html
         p.
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
-      section.hotel-search
-        h2 Поиск гостиницы в Седоне
+        .hotel-search
+          h2 Поиск гостиницы в Седоне
+          form.hotel-search-form(action='' method='get')
+            .search-input
+              label(for='date-in') Дата заезда
+              input(type='text' value='24 april' id='date-in')
+              .calendar
+            .search-input
+              label(for='date-out') Дата выезда
+              input(type='text' value='24 april' id='date-out')
+              .calendar
+            .search-input
+              label(for='adult') Взрослые
+              .number-input
+                a.input-control.minus
+                input(type='number' value='2' name='adult' id='adult')
+                a.input-control.plus
+              label(for='children') Дети
+              .number-input
+                a.input-control.minus
+                input(type='number' value='0' name='children' id='children')
+                a.input-control.plus
+            input(type='submit' value='Найти')
       .map
         img(src='http://placehold.it/700x500' alt='map')
     footer.main-footer

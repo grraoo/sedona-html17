@@ -20,26 +20,28 @@ html
         fieldset.structure
           legend Инфраструктура
           label бассейн
-            input(type='checkbox')
+            input(type='checkbox' name='pool')
           label парковка
-            input(type='checkbox')
+            input(type='checkbox' name='parking')
           label Wi-fi
-            input(type='checkbox')
+            input(type='checkbox' name='wifi')
         fieldset.room-type
           legend Тип жилья
           label Гостиница
-            input(type='checkbox')
+            input(type='checkbox' name='hotel')
           label Мотель
-            input(type='checkbox')
+            input(type='checkbox' name='motel')
           label Апартаменты
-            input(type='checkbox')
+            input(type='checkbox' name='apartment')
         fieldset.payments
           legend Стоимость в сутки (р)
-          fieldset.payments-inputs
-            label от
-              input(type=text value='0').payments-input.min
-            label до
-              input(type=text value='3000').payments-input.max
+          .payments-inputs
+            label 
+              span от
+              input.payments-input.min(type=text value='0' name='price-min')
+            label 
+              span до
+              input.payments-input.max(type=text value='3000' name='price-max')
         .range(style='height: 5px; width: 150px; background-image: linear-gradient(to right, red 50px, blue 51px, blue 99px, red 100px)')
           .min-range.range-control
           .max-range.range-control
@@ -53,8 +55,8 @@ html
             a.sort-link(href='') По типу
             a.sort-link(href='') По рейтингу
           .sort-direction
-            a.sort-direction-link(href='') /\
-            a.sort-direction-link(href='') \/
+            a.sort-direction-link.up(href='') /\
+            a.sort-direction-link.down(href='') \/
         .result-content
           article.result-item
             .image
