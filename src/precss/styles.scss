@@ -1,8 +1,70 @@
 @import 'lib/project', 'lib/mixins';
 
+@font-face {
+  font-family: 'PT-Sans';
+  src: url('fonts/ptsans.woff2') format('woff2'), url('fonts/ptsans.woff') format('woff');
+}
+
+body {
+  background: #cccccc;
+  font-family: 'PT-Sans', Tahoma, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 768px;
+}
+
+.bill-board {
+  background-image:
+    url('../img/bg-header-bottom.png'),
+    url('../img/bg-header.jpg');
+  background-size:
+    100% 37px,
+    cover;
+  background-position:
+    50% 100%,
+    center;
+    background-repeat: no-repeat;
+}
+
 main {
   counter-reset: list;
 
+}
+
+.features {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.feature {
+  grid-column: auto;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  grid-column: auto / span 2;
+
+  &.bridge {
+    background-image: url('../img/bridge.jpg');
+  }
+
+  &.feature {
+    background-image: url('../img/feature.jpg');
+  }
+}
+
+.promo,
+.map {
+  grid-column: auto / span 3;
 }
 
 .numbering {
@@ -17,7 +79,9 @@ main {
 }
 
 .range {
+  height: 5px;
   position: relative;
+  width: 150px;
 }
 
 .range-control {

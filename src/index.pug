@@ -7,104 +7,107 @@ html
     href='css/styles.css'
     rel='stylesheet')
   body
-    header
-      .logo
-      nav.main-menu
-        a.main-menu-item(href='#') Информация
-        a.main-menu-item(href='#') Фото и видео
-        a.main-menu-item(href='#') Карта штата
-        a.main-menu-item(href='hotels.html') Гостиницы
-      .bill-board
-        img(
-          src='http://placehold.it/500x500'
-          width="500"
-          height='500'
-          alt='sedona-header')
-    main
-      section.promo
-        h2.
-          СЕДОНА — небольшой городок в АРИЗОНЕ,<br>
-          зАСЛУЖИвающий большего!
-        p.
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-      section.features
-        .feature
-          h2.numbering Настоящий городок
+    .container
+      header
+        .logo
+          a.main-nav
+            img(src="img/logo.png" alt="logo")
+        nav.main-menu
+          a.main-menu-item(href='#') Информация
+          a.main-menu-item(href='#') Фото и видео
+          a.main-menu-item(href='#') Карта штата
+          a.main-menu-item(href='hotels.html') Гостиницы
+        .bill-board
+          img(
+            src='img/welcome.png'
+            width="500"
+            height='500'
+            alt='sedona-header')
+      main
+        section.features
+          section.promo
+            h2.
+              СЕДОНА — небольшой городок в АРИЗОНЕ,<br>
+              зАСЛУЖИвающий большего!
+            p.
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          .feature
+            h2.numbering Настоящий городок
 
-          p.
-            СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-        .image
-      section.features.white
-        .feature
-          h2 жильё
-          p Рекомендуем пожить в настоящем мотеле, все как в кино!
-        .feature
-          h2 Еда
-          p.
-            Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>
-            Вы НЕ разочаруетесь!
-        .feature
-          h2 Сувениры
-          p  Не только китайского, но и местного производства!
-      section.features
-        .image
-        .feature
-          h2.numbering ТАМ ЕСТЬ<br>Мост дьявола
+            p.
+              СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+          .image.feature
 
-          p.
-            Да, по нему можно пройти! Если конечно вы осмелитесь
-      section.features.grey
-        .feature
-          h2.numbering Небольшая площадь
+          .feature.white
+            h2 жильё
+            p Рекомендуем пожить в настоящем мотеле, все как в кино!
+          .feature.white
+            h2 Еда
+            p.
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>
+              Вы НЕ разочаруетесь!
+          .feature.white
+            h2 Сувениры
+            p  Не только китайского, но и местного производства!
 
-          p ВСЕ достопримечательности находятся очень близко
-        .feature
-          h2.numbering Красивая дорога
+          .image.bridge
+          .feature
+            h2.numbering ТАМ ЕСТЬ<br>Мост дьявола
 
-          p.
-            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
-        .feature
-          h2.numbering Мало тристов
+            p.
+              Да, по нему можно пройти! Если конечно вы осмелитесь
 
-          p  Большинство едет в гранд каньон и толпится там
-      section.promo
-        h2 ЗАИНТЕРЕСОВАЛИСЬ?
-        p.
-          Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в седоне
-        .hotel-search
-          h2 Поиск гостиницы в Седоне
-          form.hotel-search-form(action='' method='get')
-            .search-input
-              label(for='date-in') Дата заезда
-              input(type='text' value='24 april' id='date-in')
-              .calendar
-            .search-input
-              label(for='date-out') Дата выезда
-              input(type='text' value='24 april' id='date-out')
-              .calendar
-            .search-input
-              label(for='adult') Взрослые
-              .number-input
-                a.input-control.minus
-                input(type='number' value='2' name='adult' id='adult')
-                a.input-control.plus
-              label(for='children') Дети
-              .number-input
-                a.input-control.minus
-                input(type='number' value='0' name='children' id='children')
-                a.input-control.plus
-            input(type='submit' value='Найти')
-      .map
-        img(src='http://placehold.it/700x500' alt='map')
-    footer.main-footer
-      .hashtag #VisitSedona
-      .social
-        .social-tw
-          a.social-link(href='https://twitter.com') tw
-        .social-fb
-          a.social-link(href='https://facebook.com') fb
-        .social-yt
-          a.social-link(href='https://youtube.com') yt
-      .copyright
-        a.html-logo(href='https://htmlacademy.ru/intensive/htmlcss') Website by
+          .feature.grey
+            h2.numbering Небольшая площадь
+
+            p ВСЕ достопримечательности находятся очень близко
+          .feature.grey
+            h2.numbering Красивая дорога
+
+            p.
+              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+          .feature.grey
+            h2.numbering Мало туристов
+
+            p  Большинство едет в гранд каньон и толпится там
+          section.promo
+            h2 ЗАИНТЕРЕСОВАЛИСЬ?
+            p.
+              Укажите предполагаемые даты поездки,<br>
+              и мы покажем вам лучшие предложения гостиниц в седоне
+            .hotel-search
+              h2 Поиск гостиницы в Седоне
+              form.hotel-search-form(action='' method='get')
+                .search-input
+                  label(for='date-in') Дата заезда
+                  input(type='text' value='24 april' id='date-in')
+                  .calendar
+                .search-input
+                  label(for='date-out') Дата выезда
+                  input(type='text' value='24 april' id='date-out')
+                  .calendar
+                .search-input
+                  label(for='adult') Взрослые
+                  .number-input
+                    a.input-control.minus
+                    input(type='number' value='2' name='adult' id='adult')
+                    a.input-control.plus
+                  label(for='children') Дети
+                  .number-input
+                    a.input-control.minus
+                    input(type='number' value='0' name='children' id='children')
+                    a.input-control.plus
+                input(type='submit' value='Найти')
+          .map
+            img(src='img/map.jpg' alt='map')
+      footer.main-footer
+        .hashtag #VisitSedona
+        .social
+          .social-tw
+            a.social-link(href='https://twitter.com') tw
+          .social-fb
+            a.social-link(href='https://facebook.com') fb
+          .social-yt
+            a.social-link(href='https://youtube.com') yt
+        .copyright
+          a.html-logo(href='https://htmlacademy.ru/intensive/htmlcss') Website by
