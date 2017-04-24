@@ -1,5 +1,5 @@
 @import 'lib/project', 'lib/mixins';
-
+@include normalize();
 @font-face {
   font-family: 'PT-Sans';
   src: url('fonts/ptsans.woff2') format('woff2'), url('fonts/ptsans.woff') format('woff');

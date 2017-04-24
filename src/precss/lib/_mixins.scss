@@ -525,8 +525,4 @@
 
 }
 
-div[id^="bx_incl_area"] {
-	width: 100%;
-}
-
 @mixin grey-border($px) {border: #{$px}px solid $c-gray;}
